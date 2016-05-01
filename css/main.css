@@ -5,6 +5,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
@@ -13,8 +14,10 @@ body {
 }
 
 body > header {
+  width: 100%;
   max-width: 400px;
   position: fixed;
+  height: 100%;
 }
 
 body > header > h1 {
@@ -32,9 +35,6 @@ body > header > h1 > span {
 body > header > h1 > span:nth-child(2) {
   text-align: right;
 }
-body > header h2 {
-  font-family: serif;
-}
 body > header > nav {
   display: inline-block;
   width: 40%;
@@ -46,6 +46,26 @@ body > header > nav > a {
   display: block;
   text-decoration: none;
   color: inherit;
+}
+body > header .contact {
+  position: absolute;
+  bottom: 4em;
+  left: 0;
+}
+body > header .contact > h2 {
+  margin: 1em 0 .5em 0;
+}
+body > header .contact > a {
+  font-size: 1.5em;
+  color: #09f;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin: .5em 0;
+}
+body > header .contact > p {
+  font-size: .9em;
+  font-style: italic;
 }
 
 main {
