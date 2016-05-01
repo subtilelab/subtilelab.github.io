@@ -13,6 +13,20 @@ body {
   padding: 5%;
 }
 
+main > .page:not(:first-child) {
+  margin-top: 8em;
+  padding: 2.5em 0;
+}
+
+a.contact {
+  font-size: 1.5em;
+  color: #09f;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin: .5em 0;
+}
+
 body > header {
   width: 100%;
   max-width: 400px;
@@ -47,23 +61,15 @@ body > header > nav > a {
   text-decoration: none;
   color: inherit;
 }
-body > header .contact {
+body > header > section {
   position: absolute;
   bottom: 4em;
   left: 0;
 }
-body > header .contact > h2 {
+body > header > section > h2 {
   margin: 1em 0 .5em 0;
 }
-body > header .contact > a {
-  font-size: 1.5em;
-  color: #09f;
-  font-weight: bold;
-  text-decoration: none;
-  display: block;
-  margin: .5em 0;
-}
-body > header .contact > p {
+body > header > section > p {
   font-size: .9em;
   font-style: italic;
 }
@@ -72,6 +78,14 @@ main {
   height: 1000px;
   width: calc(95% - 400px);
   margin-left: calc(5% + 400px);
+  font-size: 18px;
+}
+
+main h2 {
+  font-size: 1.2em;
+}
+main p {
+  font-size: 1em;
 }
 
 picture {
