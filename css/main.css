@@ -20,6 +20,10 @@ hr {
   border: 1px solid #999;
 }
 
+.todo {
+  display: none;
+}
+
 main > .page:not(:first-child) {
   margin-top: 8em;
   padding: 2.5em 0;
