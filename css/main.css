@@ -13,6 +13,13 @@ body {
   padding: 5%;
 }
 
+hr {
+  width: 50%;
+  text-align: center;
+  margin: 3em auto;
+  border: 1px solid #999;
+}
+
 main > .page:not(:first-child) {
   margin-top: 8em;
   padding: 2.5em 0;
