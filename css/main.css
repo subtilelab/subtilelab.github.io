@@ -72,6 +72,13 @@ body > header > nav > a {
   text-decoration: none;
   color: inherit;
 }
+body > header > nav > a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+body > header > nav > a.selected {
+  font-weight: bold;
+}
 body > header > section {
   position: absolute;
   bottom: 4em;

@@ -191,4 +191,13 @@
     </main>
 
   </body>
+  <script>
+    var links = document.querySelectorAll('header nav a')
+    ;[].map.call(links, function(link) {
+      link.addEventListener('click', function(event) {
+        [].map.call(links, function(link) {link.classList.remove('selected')})
+        link.classList.add('selected')
+      })
+    })
+  </script>
 </html>
