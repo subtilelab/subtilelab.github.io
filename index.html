@@ -21,14 +21,15 @@
           <a href="#" class="todo">liens</a>
         </nav>
 
-        <section>
+        <section data-editable=header.content>
           <h2>Nous joindre :</h2>
           <a href="mailto:contact@subtilelab.com" class="contact">contact@subtilelab.com</a>
           <p>Tous les pavages présentés sur le site Subtilelab sont des modèles déposés et ne peuvent être utilisés commercialement sans autorisation de leur auteur.</p>
+        </section>
       </header>
 
       <main>
-        <section id="home" class="page">
+        <section id="home" class="page" data-editable=home.content>
           <h1>Accueil</h1>
           <p>
             Le site <strong>Subtilelab</strong> vous propose des <strong>motifs de pavage originaux</strong>, permettant des compositions multiples, changeantes et stimulantes.
@@ -59,7 +60,7 @@
           </picture>
       </section>
 
-      <section id="motifs" class="page">
+      <section id="motifs" class="page" data-editable=motifs.content>
         <img src="./images/labile.png" alt="Pavage Labile" />
         <h1>Labile</h1>
         <p>
@@ -155,7 +156,7 @@
         <img src="./images/motifs/stabile4AB1.png" alt="motif stabile4AB1" />
       </section>
 
-      <section class="page" id="questions">
+      <section class="page" id="questions" data-editable=questions.content>
         <h1>Origine des motifs</h1>
         <p>
           Tous les motifs présentés sur ce site ont été imaginés, développés et mis au point par Richard Danquigny, architecte à Montpellier (France).
@@ -191,6 +192,13 @@
     </main>
 
   </body>
+  <script src=https://vinyll.github.io/everywhere.js/dist/everywhere.min.js></script>
+  <script>new Everywhere({
+    server: 'https://everywhere.webnomad.org',
+    user: 'subtilelab.com',
+    extensions: [EWMediumEditor]
+  })</script>
+
   <script>
     var links = document.querySelectorAll('header nav a')
     ;[].map.call(links, function(link) {
